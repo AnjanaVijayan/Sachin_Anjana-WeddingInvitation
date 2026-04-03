@@ -4,25 +4,11 @@
     box-sizing: border-box;
 }
 
-/*:root {
-    --primary-color: #670716;
-    --secondary-color: #ff006e;
-    --accent-gold: #ffd60a;
-    --accent-purple: #7209b7;
-    --accent-teal: #6f7af5;
-    --text-dark: #1a1a1a;
-    --text-light: #5a5a5a;
-    --bg-light: #fff8f0;
-    --bg-gradient-1: #ff006e;
-    --bg-gradient-2: #ffd60a;
-    --white: #ffffff;
-}*/
-
 
 :root {
     --primary-color: #D96C3F; /* Terracotta */
     --secondary-color: #6F7C3B; /* Olive Green */
-    --accent-gold: #4A3F35; /* Dark Brown */
+    --accent-gold: #E8DCC8; /* neutral champagne */
     --accent-purple: #D96C3F; /* Reusing terracotta as warm accent */
     --accent-teal: #6F7C3B; /* Olive tone reused */
     --text-dark: #4A3F35; /* Dark Brown */
@@ -116,15 +102,6 @@ body {
         transform: translate(0,0);
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -263,11 +240,17 @@ body {
 .hero-date {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    color: var(--accent-gold);
-    margin-top: 1.5rem;
     font-weight: 600;
+    margin-top: 1.5rem;
+    color: var(--accent-gold);
+
+    /* Stronger, softer shadow for readability */
+    text-shadow: 
+        0px 2px 6px rgba(0, 0, 0, 0.35),
+        0px 0px 2px rgba(0, 0, 0, 0.25);
+
+    /* Smooth animation */
     animation: fadeInUp 1s ease-out 0.6s both;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .hero-quote {
